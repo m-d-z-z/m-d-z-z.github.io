@@ -323,7 +323,7 @@ pre_install_caddy(){
 
     # Set caddy v2ray tls email
     echo "caddy v2ray tls email"
-    v2ray_email= "mdzz@mdzz.moe"
+    v2ray_email="mdzz@mdzz.moe"
     echo
     echo "---------------------------"
     echo "v2ray_email = ${v2ray_email}"
