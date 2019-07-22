@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 configId=$1
 accessKey=$2
 if ((configId > 0)); then
