@@ -12,7 +12,7 @@ fi
 configId=$1
 accessKey=$2
 
-nohup $(readlink -f v2ray) --config=https://www.x-air.icu/api/hostedConfig/$configKey/?key=$accessKey >> /dev/null 2>&1 &
+nohup $(readlink -f v2ray) --config=https://www.x-air.icu/api/hostedConfig/$configId/\?key=$accessKey >> /dev/null 2>&1 &
 echo 'Preparing...'
 sleep 1
 
