@@ -24,7 +24,7 @@ if [ ! $v2ray_pid ]; then
         v2ray_pid=$(ps ux | grep "$(readlink -f v2ray)" | grep -v grep | awk '{print $2}')
 
         if [ ! $v2ray_pid ]; then
-            echo -e "\033[31m***V2ray重启失败，可能是配置文件出错或者端口被占用，请检查***\033[0m"
+            echo -e "\033[31m***V2ray启动失败，可能是配置文件出错或者端口被占用，请检查***\033[0m"
         else
             echo -e "\033[32mV2ray启动成功 (pid:'$v2ray_pid')\033[0m"
         fi
