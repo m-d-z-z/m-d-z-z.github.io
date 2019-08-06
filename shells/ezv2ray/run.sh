@@ -7,11 +7,11 @@ cfg_realpath=$(readlink -f cfg.json)
 v2ray_pid=$(ps ux | grep "$(readlink -f v2ray) --config=https://www.x-air.icu/api/hostedConfig/$configId/?key=$accessKey" | grep -v grep | awk '{print $2}')
 v2rayFile="./v2ray"
 v2ctlFile="./v2ctl"
-if [ ! -e "$v2rayFile" || ! -e "$v2ctlFile" ]; then
+if [ ! -e "$v2rayFile" -o ! -e "$v2ctlFile" ]; then
     echo '错误： 本脚本依赖的核心文件 v2ray 和 v2ctl 不存在'
     exit
 fi
-if [ ! -x "$v2rayFile" || ! -x "$v2ctlFile" ]; then
+if [ ! -x "$v2rayFile" -o ! -x "$v2ctlFile" ]; then
     echo '错误：本脚本依赖的核心文件 v2ray 和 v2ctl 没有运行权限'
     exit
 fi
