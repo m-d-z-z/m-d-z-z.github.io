@@ -1,5 +1,5 @@
 #!/bin/bash
-echo 1> /tmp/autonode.install.auto
+echo "1"> /tmp/autonode.install.auto
 echo $1>> /tmp/autonode.install.auto
 echo $2>> /tmp/autonode.install.auto
 echo $3>>/tmp/autonode.install.auto
