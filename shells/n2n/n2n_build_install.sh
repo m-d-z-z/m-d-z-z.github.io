@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ "`cat /etc/os-release | grep centos`" == '' ]; then
+if [ "`cat /etc/os-release | grep ubuntu`" == '' ]; then
 yum install cmake gcc gcc-c++ git wget openssl-devel autoconf unzip -y
 else
 apt-get install build-essential libssl-dev autoconf unzip -y
