@@ -1,0 +1,8 @@
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+external-controller: '127.0.0.1:9090'
+proxies:
+    - { name: 'hk-test', type: ss, server: baidu.caonima.com, port: 1001, cipher: chacha20-ietf-poly1305, password: 00000000-0000-0000-0000-000000000000, udp: true }
